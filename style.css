@@ -135,6 +135,9 @@ font-size: 20px;
 .features .feat p{
     color: #777;
     line-height: 1.7;
+    width: 290px;
+    margin: auto;
+}
 }
 
 /*main-frame*/
