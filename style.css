@@ -114,19 +114,31 @@ font-size: 20px;
 
 .features{
     padding: 20px 0;
-    background-color: rgb(235 240 242);
+    background-color: white;
 }
 .features .container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-    gap: 50px
+    gap: 100px;
 }
+
 .features .feat{
     text-align: center;
+    margin-right: 35px;
+    margin-left: 20px;
+    background-color: #f9f9f9;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
 }
 .features .feat .EM{
     border-radius: 100%;
     width: 200px;
+    box-shadow: #1a3a5b8a -3px 3px 6px 1px;
+}
+.features .feat .mypic{
+    box-shadow: #1a3a5b8a -3px 3px 6px 1px;
+    border-radius: 100%;
 }
 .features .feat h3{
     font-weight: 800;
@@ -138,6 +150,7 @@ font-size: 20px;
     width: 290px;
     margin: auto;
 }
+
 /*main-frame*/
 .special-heading{
     font-weight: 800;
@@ -160,14 +173,17 @@ font-size: 20px;
 }
 
 .mainframe {
+    padding-top: 20px;
 text-align: center;
+margin-bottom: 20px;
 }
 
 .mainframe .img{
 width: 150px;
 border-radius: 30%;
-margin:0;
+margin:10px 0 0 0;
 padding: 0;
+box-shadow: #1a3a5b8a -3px 3px 6px 1px;
 }
 
 .mainframe .container p{
@@ -180,14 +196,18 @@ padding: 0;
     color: #743b3b9c;
     overflow:auto;
     height: 200px;
+    background-color: #f9f9f9;
+    border: 5px;
+    border-color:#ebf0f2;
+    border-style: solid;
 }
 
-.edu{
+#about{
     background-color: #ebf0f2;
     margin-top: 35px;
     padding: 0;
 }
-.skill{
+.exp{
     background-color: #ebf0f2;
     margin-top: 35px;
     padding: 0;
@@ -199,7 +219,15 @@ padding: 0;
     height: 75px;
     font-size: 18px;
 }
+.contact{
+    background-color: #ebf0f2;
+}
 
+.contact .mainframe img{
+    box-shadow: #1a3a5b8a -3px 3px 6px 1px inset,
+                #1a3a5b8a -3px 3px 6px 1px;
+                background-color: #f9f9f9;
+}
 hr{
     width:50%;
 }
