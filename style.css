@@ -3,6 +3,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -191,7 +194,7 @@ box-shadow: #1a3a5b8a -3px 3px 6px 1px;
     font-size: 20px;
     line-height: 1.7;
     margin: 0;
-    padding-bottom: 35px;
+    padding-top: 15px;
     text-align: center;
     color: #743b3b9c;
     overflow:auto;
@@ -217,7 +220,7 @@ box-shadow: #1a3a5b8a -3px 3px 6px 1px;
     margin-bottom: 0px;
     padding: 0;
     height: 75px;
-    font-size: 16px;
+    font-size: 18px;
 }
 .contact{
     background-color: #ebf0f2;
@@ -243,4 +246,20 @@ a:hover{
 }
 .phone{
     padding: 5px;
+}
+.homekey{
+    margin: 0;
+    padding: 0;
+}
+.homekey p{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.homekey img{
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    opacity: 0.7;
+
 }
