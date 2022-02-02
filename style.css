@@ -117,23 +117,62 @@ font-size: 20px;
 
 .features{
     padding: 20px 0;
+    margin-top: 25px;
     background-color: white;
 }
 .features .container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
     gap: 100px;
+    padding: 0;
 }
 
 .features .feat{
     text-align: center;
     margin-right: 35px;
     margin-left: 20px;
-    background-color: #f9f9f9;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-top: 20px;
+    background-color: #e2eaec;
+    padding: 0;
+    position: relative;
+    border-radius: 20%;
 }
+.feat .me:before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #1a3a6f;
+}
+.feat .me:after{
+    content: "";
+    height: calc(100% + 28px);
+    width: 36px;
+    position: absolute;
+    bottom: -15px;
+    left: -20px;
+    background-color: #1a3a6f;
+}
+.feat .emergency:before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1a3a6f;
+}
+.feat .emergency:after{
+    content: "";
+    height: calc(100% + 28px);
+    width: 36px;
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    background-color: #1a3a6f;
+}
+
 .features .feat .EM{
     border-radius: 100%;
     width: 200px;
@@ -151,7 +190,15 @@ font-size: 20px;
     color: #777;
     line-height: 1.7;
     width: 290px;
-    margin: auto;
+    margin: 0 auto 15px auto;
+    border-width: 5px;
+    border-style: solid;
+    border-image-source: linear-gradient(to right bottom,#1a3a5b 10%,#a88585 10%,#a88585 20%,#a88585 30%,
+                                        #afbdcf 30%,#afbdcf 40%,#000000a3 40%,#000000a3 50%,#a88585 50%,
+                                        #a88585 60%,#afbdcf 60%,#afbdcf 70%,#3d6599 70%,#3d6599 80%,#1a3a5b 80%,
+                                        #1a3a5b 90%,#a88585 90%);
+    border-image-slice: 1;
+    background-color: #f9f9f9;
 }
 
 /*main-frame*/
@@ -200,10 +247,15 @@ box-shadow: #1a3a5b8a -3px 3px 6px 1px;
     overflow:auto;
     height: 200px;
     background-color: #f9f9f9;
-    border: 5px;
-    border-color:#ebf0f2;
+    border-width: 5px;
     border-style: solid;
+    border-image-source: linear-gradient(to left top,#1a3a5b 10%,#a88585 10%,#a88585 20%,#a88585 30%,
+                                        #afbdcf 30%,#afbdcf 40%,#000000a3 40%,#000000a3 50%,#a88585 50%,
+                                        #a88585 60%,#afbdcf 60%,#afbdcf 70%,#3d6599 70%,#3d6599 80%,#1a3a5b 80%,
+                                        #1a3a5b 90%,#a88585 90%);
+    border-image-slice: 1;
 }
+
 
 #about{
     background-color: #ebf0f2;
