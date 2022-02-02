@@ -136,7 +136,7 @@ font-size: 20px;
     position: relative;
     border-radius: 20%;
 }
-.feat .me:before{
+.feat .me::before{
     content: "";
     width: 100%;
     height: 5px;
@@ -145,7 +145,7 @@ font-size: 20px;
     left: 0;
     background-color: #1a3a6f;
 }
-.feat .me:after{
+.feat .me::after{
     content: "";
     height: calc(100% + 28px);
     width: 36px;
@@ -154,7 +154,7 @@ font-size: 20px;
     left: -20px;
     background-color: #1a3a6f;
 }
-.feat .emergency:before{
+.feat .emergency::before{
     content: "";
     width: 100%;
     height: 5px;
@@ -163,7 +163,7 @@ font-size: 20px;
     right: 0;
     background-color: #1a3a6f;
 }
-.feat .emergency:after{
+.feat .emergency::after{
     content: "";
     height: calc(100% + 28px);
     width: 36px;
