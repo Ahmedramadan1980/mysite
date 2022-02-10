@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 html{
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
+
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -90,7 +91,7 @@ body{
 }
 /*landing*/
 .landing{
-background-image: url(background1.png);
+background-image: url(../images/background1.png);
 background-size: cover;
 height: calc(100vh - 41px);
 position: relative;
@@ -145,6 +146,10 @@ font-size: 20px;
     left: 0;
     background-color: #1a3a6f;
 }
+.feat:hover .me::before{
+    bottom: 100%;
+    transition: 0.3s;
+}
 .feat .me::after{
     content: "";
     height: calc(100% + 28px);
@@ -154,6 +159,7 @@ font-size: 20px;
     left: -20px;
     background-color: #1a3a6f;
 }
+
 .feat .emergency::before{
     content: "";
     width: 100%;
@@ -162,6 +168,10 @@ font-size: 20px;
     top: 0;
     right: 0;
     background-color: #1a3a6f;
+}
+.feat:hover .emergency::before{
+    top: 100%;
+    transition: 0.3s;
 }
 .feat .emergency::after{
     content: "";
@@ -193,14 +203,39 @@ font-size: 20px;
     margin: 0 auto 15px auto;
     border-width: 5px;
     border-style: solid;
-    border-image-source: linear-gradient(to right bottom,#1a3a5b 10%,#a88585 10%,#a88585 20%,#a88585 30%,
+    border-image-source: linear-gradient(to left top,#1a3a5b 10%,#a88585 10%,#a88585 20%,#a88585 30%,
                                         #afbdcf 30%,#afbdcf 40%,#000000a3 40%,#000000a3 50%,#a88585 50%,
                                         #a88585 60%,#afbdcf 60%,#afbdcf 70%,#3d6599 70%,#3d6599 80%,#1a3a5b 80%,
                                         #1a3a5b 90%,#a88585 90%);
     border-image-slice: 1;
+    box-shadow: #1a3a5b8a -3px 3px 6px 1px inset,
+    #1a3a5b8a -3px 3px 6px 1px;
     background-color: #f9f9f9;
+    animation-name: border;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction: alternate;
+    animation-play-state: running;
 }
+@keyframes border{
+    from{
+        border-image-source: linear-gradient(to left top,#1a3a5b 10%,#a88585 10%,#a88585 20%,#a88585 30%,
+        #afbdcf 30%,#afbdcf 40%,#000000a3 40%,#000000a3 50%,#a88585 50%,
+        #a88585 60%,#afbdcf 60%,#afbdcf 70%,#3d6599 70%,#3d6599 80%,#1a3a5b 80%,
+        #1a3a5b 90%,#a88585 90%);
+        }
+        to{
+            border-image-source: linear-gradient(to right bottom,#1a3a5b 10%,#772323 10%,#772323 20%,#772323 30%,
+            #4696ff 30%,#4696ff 40%,#000000a3 40%,#000000a3 50%,#772323 50%,
+            #772323 60%,#4696ff 60%,#4696ff 70%,#3d6599 70%,#3d6599 80%,#1a3a5b 80%,
+            #1a3a5b 90%,#772323 90%);
 
+        }
+}
+.features .feat:hover p{
+    animation-play-state: paused;
+}
 /*main-frame*/
 .special-heading{
     font-weight: 800;
@@ -223,17 +258,20 @@ font-size: 20px;
 }
 
 .mainframe {
-    padding-top: 20px;
+padding-top: 20px;
 text-align: center;
 margin-bottom: 20px;
 }
 
-.mainframe .img{
+.img{
 width: 150px;
 border-radius: 30%;
 margin:10px 0 0 0;
 padding: 0;
 box-shadow: #1a3a5b8a -3px 3px 6px 1px;
+}
+.img:hover{
+    transform: rotatey(180deg);
 }
 
 .mainframe .container p{
@@ -245,7 +283,7 @@ box-shadow: #1a3a5b8a -3px 3px 6px 1px;
     text-align: center;
     color: #743b3b9c;
     overflow:auto;
-    height: 200px;
+    height: 180px;
     background-color: #f9f9f9;
     border-width: 5px;
     border-style: solid;
@@ -254,6 +292,16 @@ box-shadow: #1a3a5b8a -3px 3px 6px 1px;
                                         #a88585 60%,#afbdcf 60%,#afbdcf 70%,#3d6599 70%,#3d6599 80%,#1a3a5b 80%,
                                         #1a3a5b 90%,#a88585 90%);
     border-image-slice: 1;
+    box-shadow: #1a3a5b8a -3px 3px 6px 1px inset,
+    #1a3a5b8a -3px 3px 6px 1px;
+}
+
+.mainframe .container p:hover{
+    border-image-source: linear-gradient(to right bottom,#1a3a5b 10%,#772323 10%,#772323 20%,#772323 30%,
+    #4696ff 30%,#4696ff 40%,#000000a3 40%,#000000a3 50%,#772323 50%,
+    #772323 60%,#4696ff 60%,#4696ff 70%,#3d6599 70%,#3d6599 80%,#1a3a5b 80%,
+    #1a3a5b 90%,#772323 90%);
+    transition: 0.5s;
 }
 
 
@@ -272,7 +320,7 @@ box-shadow: #1a3a5b8a -3px 3px 6px 1px;
     margin-bottom: 0px;
     padding: 0;
     height: 75px;
-    font-size: 16px;
+    font-size: 18px;
 }
 .contact{
     background-color: #ebf0f2;
@@ -281,7 +329,7 @@ box-shadow: #1a3a5b8a -3px 3px 6px 1px;
 .contact .mainframe img{
     box-shadow: #1a3a5b8a -3px 3px 6px 1px inset,
                 #1a3a5b8a -3px 3px 6px 1px;
-                background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 hr{
     width:50%;
@@ -313,5 +361,4 @@ a:hover{
     padding: 0;
     width: 30px;
     opacity: 0.7;
-
 }
